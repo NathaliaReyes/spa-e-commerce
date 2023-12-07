@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Products</title>
+
+</head>
+<body class="body-products">
+    <div class="cont">
+        <div class="row">
+
+        </div>
+    </div>
+    <div id="app">
+        <h1 class="h1-products">Welcome to purchase!</h1>
+        <div class="col">
+            <div class="row">
+                <button type="button" class="btn-products" onclick="buyProduct()">Buy a Product</button>
+            </div>
+        
+            <div class="row">
+                <div class="col-6">
+                    <label for="productName">Product Name:</label>
+                    <input type="text" id="productName">
+                </div>
+                <div class="col-6">
+                    <label for="productPrice">Product Price:</label>
+                    <input type="number" step="0.01" id="productPrice">
+                </div>
+    
+                <button type="button" id="addProductBtn" class="btn-products">Add a Product</button>
+                
+            </div>
+        </div>
+        
+    </div>
+
+
+    <script src="products.js"></script>
+</body>
+</html>
