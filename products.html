@@ -3,39 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleproducts.css">
     <title>Products</title>
 
 </head>
-<body class="body-products">
-    <div class="cont">
-        <div class="row">
+<body>
+    <header>
+      <h1>Welcome to Purchase!</h1>
+    </header>
+  
+    <nav>
+      <a href="#">Oil fruit</a>
+      <a href="#">Lavender Essential Oil</a>
+      <a href="#">Sea Salt Body Scrub</a>
+      <a href="#">Clay Facial Mask</a>
+      <a href="#">Shower Gel</a>
+      <a href="#">Green Tea</a>
+      <a href="#">Aloe Vera Gel</a>
+      <a href="./cart.html" id="cart"><img src="./imagenes/shopping-cart.png" alt=""><span id="cuenta-carrito">0</span></a>
+    </nav>
+  
+    <main>
+      <section class="product">
+        <div class="product-slideshow">
+          <button>&lt;</button>
+          <!-- Wrap the image in a div to avoid weird flexbox behavior -->
+          <div>
+            <img class="product-image" src="imagenes/oil.jpg" alt="fruit-oil" />
+          </div>
+          <button>&gt;</button>
+        </div>
+        <div class="product-details">
+          <h2>Relaxing Aromatherapy Massage Oil</h2>
+          <p>A blend of essential oils designed to alleviate muscle tension and provide a relaxing experience during massages.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime tempore sunt culpa dicta iure ipsa aperiam impedit tenetur optio temporibus, nostrum aliquam rerum voluptate! Blanditiis sit ipsam praesentium esse facilis!</p>
+          <p>Price: $65</p>
+          <p>
+            <button class="buybtn" data-name="Relaxing Aromatherapy Massage Oil" data-price="65">Buy Now</button>
+          </p>
+        </div>
+      </section>
 
-        </div>
-    </div>
-    <div id="app">
-        <h1 class="h1-products">Welcome to purchase!</h1>
-        <div class="col">
-            <div class="row">
-                <button type="button" class="btn-products" onclick="buyProduct()">Buy a Product</button>
+      <section class="product">
+          <div class="product-slideshow">
+            <button>&lt;</button>
+            <!-- Wrap the image in a div to avoid weird flexbox behavior -->
+            <div>
+              <img class="product-image" src="imagenes/lavender.jpg" alt="lavender-oil" />
             </div>
-        
-            <div class="row">
-                <div class="col-6">
-                    <label for="productName">Product Name:</label>
-                    <input type="text" id="productName">
-                </div>
-                <div class="col-6">
-                    <label for="productPrice">Product Price:</label>
-                    <input type="number" step="0.01" id="productPrice">
-                </div>
-    
-                <button type="button" id="addProductBtn" class="btn-products">Add a Product</button>
-                
+            <button>&gt;</button>
+          </div>
+          <div class="product-details">
+            <h2>Lavender Essential Oil</h2>
+            <p>Used in aromatherapy and massages to promote relaxation and reduce stress.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime tempore sunt culpa dicta iure ipsa aperiam impedit tenetur optio temporibus, nostrum aliquam rerum voluptate! Blanditiis sit ipsam praesentium esse facilis!</p>
+            <p>Price: $35</p>
+            <p>
+              <button class="buybtn" data-name="Lavender Essential Oil" data-price="35">Buy Now</button>
+            </p>
+          </div>
+        </section>
+
+        <section class="product">
+          <div class="product-slideshow">
+            <button>&lt;</button>
+            <!-- Wrap the image in a div to avoid weird flexbox behavior -->
+            <div>
+              <img class="product-image" src="imagenes/scrub.jpg" alt="sea-salt-scrub" />
             </div>
-        </div>
-        
-    </div>
+            <button>&gt;</button>
+          </div>
+          <div class="product-details">
+            <h2>Sea Salt Body Scrub</h2>
+            <p>A skincare product that helps exfoliate the skin, removing dead cells and leaving it smooth and renewed.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime tempore sunt culpa dicta iure ipsa aperiam impedit tenetur optio temporibus, nostrum aliquam rerum voluptate! Blanditiis sit ipsam praesentium esse facilis!</p>
+            <p>Price: $73</p>
+            <p>
+              <button class="buybtn" data-name="Sea Salt Body Scrub" data-price="73">Buy Now</button>
+            </p>
+          </div>
+        </section>
+
+        <section class="product">
+          <div class="product-slideshow">
+            <button>&lt;</button>
+            <!-- Wrap the image in a div to avoid weird flexbox behavior -->
+            <div>
+              <img class="product-image" src="imagenes/mask-8407989_640.jpg" alt="clay-mask" />
+            </div>
+            <button>&gt;</button>
+          </div>
+          <div class="product-details">
+            <h2>Clay Facial Mask</h2>
+            <p>Ideal for deep cleansing pores and revitalizing the skin on the face.</p>
+            <p>The clay in the mask works to deeply cleanse the pores, helping to remove dirt, oil, and dead skin cells that can contribute to dullness and breakouts.</p>
+            <p>Price: $45</p>
+            <p>
+              <button class="buybtn" data-name="Clay Facial Mask" data-price="45">Buy Now</button>
+            </p>
+          </div>
+        </section>
+
+        <section class="product">
+          <div class="product-slideshow">
+            <button>&lt;</button>
+            <!-- Wrap the image in a div to avoid weird flexbox behavior -->
+            <div>
+              <img class="product-image" src="imagenes/soap-5285099_640.jpg" alt="shower-gel" />
+            </div>
+            <button>&gt;</button>
+          </div>
+          <div class="product-details">
+            <h2>Eucalyptus Shower Gel</h2>
+            <p>Infused with eucalyptus essential oil, this shower gel can create a refreshing and invigorating experience, especially during a spa shower.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, est?</p>
+            <p>Price: $49</p>
+            <p>
+              <button class="buybtn" data-name="Eucalyptus Shower Gel" data-price="49">Buy Now</button>
+            </p>
+          </div>
+        </section>
+
+        <section class="product">
+          <div class="product-slideshow">
+            <button>&lt;</button>
+            <!-- Wrap the image in a div to avoid weird flexbox behavior -->
+            <div>
+              <img class="product-image" src="imagenes/toner-906142_640.jpg" alt="grean-tea-mask" />
+            </div>
+            <button>&gt;</button>
+          </div>
+          <div class="product-details">
+            <h2>Green Tea and Cucumber Eye Masks</h2>
+            <p>Soothing eye masks that help reduce puffiness and refresh the delicate skin around the eyes.</p>
+            <p>Price: $120</p>
+            <p>
+              <button class="buybtn" data-name="Green Tea and Cucumber Eye Masks" data-price="120">Buy Now</button>
+            </p>
+          </div>
+        </section>
+
+        <section class="product">
+          <div class="product-slideshow">
+            <button>&lt;</button>
+            <!-- Wrap the image in a div to avoid weird flexbox behavior -->
+            <div>
+              <img class="product-image" src="imagenes/aloe-4268793_640.jpg" alt="fruit-oil" />
+            </div>
+            <button>&gt;</button>
+          </div>
+          <div class="product-details">
+            <h2>Aloe Vera Soothing Gel</h2>
+            <p>A versatile gel that can be used to calm and hydrate the skin, especially after sun exposure or various spa treatments.</p>
+            <p>Price: $90</p>
+            <p>
+              <button class="buybtn" data-name="Aloe Vera Soothing Gel" data-price="90">Buy Now</button>
+            </p>
+          </div>
+        </section>
+    </main>
+  
+    <footer class="main-footer">
+      <p>2023 Made with &#10084; by Silvia Reyes </p>
+    </footer>
 
 
     <script src="products.js"></script>

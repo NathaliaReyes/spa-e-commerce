@@ -40,6 +40,12 @@
     --smaller-font-size : 0.6875rem;
 }
 
+nav a{
+  font-size: larger;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: white;
+}
+
 .body-login {
   background-color: steelblue;
   color: var(--white-color);
@@ -415,46 +421,5 @@ img[alt="bannerimagen"]:hover {
 .social-networks a:not(:last-of-type) {
   margin-right : 1.5rem;
 }
-
-
-/* products css*/
-.body-products {
-  font-family: Arial, sans-serif;
-  background-color: #f8f8f8;
-  margin: 0;
-  padding: 0;
-}
-
-#app {
-  max-width: 600px;
-  margin: 20px auto;
-  background-color: #fff;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-}
-
-.h1-products {
-  text-align: center;
-  color: #333;
-}
-
-.btn-products {
-  background-color: #4caf50;
-  color: #fff;
-  padding: 10px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-bottom: 3rem;
-}
-
-
-
-
-
-
-
-
 
 
