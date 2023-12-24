@@ -43,7 +43,7 @@
 nav a{
   font-size: larger;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: white;
+  
 }
 
 .body-login {
@@ -246,9 +246,18 @@ h4 {
   background : var(--color);
 }
 
-.section-container h1,
-.section-container h2 {
-  text-align : center;
+.services-section {
+  text-align: center;
+}
+
+.services-section h2 {
+  margin-bottom: 30px; /* Ajusta el espacio entre el título y los elementos */
+}
+
+.service-item {
+  display: inline-block;
+  margin: 0 20px; /* Ajusta el espacio entre los elementos */
+  vertical-align: top; /* Ajusta la alineación vertical al principio */
 }
 
 .main-banner .subtitle {
@@ -266,7 +275,6 @@ img[alt="bannerimagen"] {
   
   /* Efecto al pasar el ratón por encima */
 img[alt="bannerimagen"]:hover {
-  opacity: 1; /* La imagen estará completamente visible al pasar el ratón por encima */
   border-radius: 15px; /* Ajusta el valor según el redondeo que desees al pasar el ratón */
 }
 
@@ -306,6 +314,7 @@ img[alt="bannerimagen"]:hover {
 .main-banner {
   background : var(--primary-color);
   padding    : var(--section-spacing) 0;
+  position: relative;
 }
   
   
@@ -421,5 +430,190 @@ img[alt="bannerimagen"]:hover {
 .social-networks a:not(:last-of-type) {
   margin-right : 1.5rem;
 }
+
+/* products css*/
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+  }
+  
+  header {
+    padding: 10px;
+    text-align: center;
+    background: #13293d;
+    color: #fff;
+  }
+  
+  nav {
+    display: flex;
+  }
+  
+  nav a {
+    padding: 14px 0 14px 150px;
+
+  }
+  
+  footer {
+    padding: 20px;
+    text-align: center;
+    background: #13293d;
+    color: #fff;
+    margin-top: auto;
+  }
+  
+  .product {
+    display: flex;
+    width: 90%;
+    margin: 1% auto;
+    align-items: start;
+    margin-bottom: 25px;
+  }
+  
+  .product button {
+    font-size: 150%;
+  
+    
+  }
+  
+  .product-slideshow {
+    display: flex;
+    align-items: center;
+  }
+  
+  .product-image {
+    width: 100%;
+  }
+  
+  .product-details {
+    margin-left: 3%;
+    flex: 0 0 60%;
+  }
+
+
+
+  nav {
+    box-shadow: 0 8px  5px rgba(0, 0, 0, 0.104);
+  }
+
+
+  #cuenta-carrito {
+    background-color: #aec0f2;
+    border-radius: 100%;
+    display: inline-block;
+    width: 20px;
+    line-height: 20px;
+    aspect-ratio: 1;
+    text-align: center;
+    position: absolute;
+  }
+
+  
+  
+  
+  @media screen and (max-width: 768px) {
+    main,
+    nav,
+    .product {
+      flex-direction: column;
+    }
+  
+    .product-slideshow button {
+      /* Removes the slideshow buttons from the document flow */
+      display: none;
+    }
+  
+    .product-details {
+      margin-left: 0;
+    }
+  }
+
+  /* styles nav bar*/
+  body {
+      margin: 0;
+      font-family: Verdana, Geneva, Tahoma, sans-serif
+  }
+
+  .main-header {
+      background-color: white;
+      padding: 10px;
+  }
+
+  .main-header div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+  }
+
+  #logo {
+    margin-right: auto; /* Empuja el logo hacia la izquierda */
+    border-radius: 10px; 
+  }
+
+  .main-header a {
+      color: black;
+      margin: 0 15px;
+      text-decoration: none;
+  }
+
+  #cart {
+    position: relative;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+  }
+
+  #cart .jam-shopping-cart {
+      margin-right: 10px;
+      color: black;
+      font-size: 24px;
+  }
+  
+  #cart-count {
+    background-color: var(--primary-color);; /* Color de fondo del círculo */
+    color: #fff;
+    border-radius: 50%; /* Hace que el círculo sea redondeado */
+    padding: 5px 8px; /* Ajusta el espaciado dentro del círculo */
+    font-size: 14px;
+  }
+
+  #cart img {
+    width: 30px; /* Ajusta el tamaño del icono del carrito */
+    margin-right: 10px;
+  }
+
+  #cuenta-carrito {
+    background-color: #ff0000; /* Establece el color de fondo del círculo */
+    color: #fff; /* Establece el color del texto del número */
+    border-radius: 50%; /* Hace que el círculo sea redondeado */
+    padding: 5px 8px; /* Ajusta el espaciado dentro del círculo */
+    font-size: 14px; /* Ajusta el tamaño del número dentro del círculo */
+  }
+
+  #section-items {
+    
+    background-color: lightblue; /* Establece el color de fondo a azul claro */
+    padding: 20px;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  #section-items a {
+    display: block;
+    margin: 10px 0; /* Ajusta el espacio entre los elementos */
+    font-size: 18px; /* Ajusta el tamaño del texto */
+}
+  
+  
+  
+  
 
 

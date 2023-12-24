@@ -3,27 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styleproducts.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
     <title>Products</title>
 
 </head>
 <body>
-    <header>
-      <h1>Welcome to Purchase!</h1>
-    </header>
+
+  <header class="main-header">
+    <div>
+      <nav>
+        <a href="index2.html">Home</a>
+        <a href=#>About Us</a>
+        <a href="products.html">Products</a>
+        <a href="#">Contact</a>
+      </nav>
+    </div>
+    
+  </header>
   
-    <nav>
-      <a href="#">Oil fruit</a>
-      <a href="#">Lavender Essential Oil</a>
-      <a href="#">Sea Salt Body Scrub</a>
-      <a href="#">Clay Facial Mask</a>
-      <a href="#">Shower Gel</a>
-      <a href="#">Green Tea</a>
-      <a href="#">Aloe Vera Gel</a>
-      <a href="./cart.html" id="cart"><img src="./imagenes/shopping-cart.png" alt=""><span id="cuenta-carrito">0</span></a>
-    </nav>
   
     <main>
+      <section id="section-items">
+        <a href="#">Oil fruit</a>
+        <a href="#">Lavender Essential Oil</a>
+        <a href="#">Sea Salt Body Scrub</a>
+        <a href="#">Clay Facial Mask</a>
+        <a href="#">Shower Gel</a>
+        <a href="#">Green Tea</a>
+        <a href="#">Aloe Vera Gel</a>
+        <a href="./cart.html" id="cart">
+        <img src="./imagenes/shopping-cart.png" alt="Shopping Cart">
+        <span id="cuenta-carrito">0</span></a>
+      </section>
+  
       <section class="product">
         <div class="product-slideshow">
           <button>&lt;</button>
@@ -168,6 +182,13 @@
     </footer>
 
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="products.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+      // Cargar la barra de navegación desde navbar.html
+      document.getElementById('navbar-container').innerHTML = '<object type="text/html" data="navbar.html" ></object>';
+  </script>
 </body>
-</html>
+</html> 
